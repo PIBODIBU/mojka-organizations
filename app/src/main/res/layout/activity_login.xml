@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAppPrimary" />
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/img_bg_login" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <com.rey.material.widget.ProgressView
+        android:id="@+id/progress_view"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/toolbar"
+        android:visibility="invisible"
+        app:pv_autostart="true"
+        app:pv_circular="false"
+        app:pv_progressMode="indeterminate"
+        app:pv_progressStyle="@style/AppTheme.LinearProgress" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            android:hint="@string/hint_phone"
+            android:inputType="phone"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="380930535204" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="qwertyasdf" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_login"
+            style="@style/AppTheme.Button.Dark.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_accent"
+            android:fontFamily="@font/gotha_bol"
+            android:text="@string/btn_login"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:rd_style="@style/Material.Drawable.Ripple.Wave.Light" />
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            style="@style/AppTheme.TextView.Dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:text="@string/forgot_password" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_register"
+            style="@style/AppTheme.Button.Dark.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/btn_accent"
+            android:text="@string/btn_register"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:rd_style="@style/Material.Drawable.Ripple.Wave.Light" />
+    </LinearLayout>
+</RelativeLayout>

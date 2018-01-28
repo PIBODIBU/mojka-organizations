@@ -1,0 +1,96 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorAppPrimary</item>
+        <item name="colorPrimaryDark">@color/colorAppPrimaryDark</item>
+        <item name="colorAccent">@color/colorAppAccent</item>
+    </style>
+
+    <style name="AppTheme.CircularProgress" parent="Material.Drawable.CircularProgress">
+        <item name="cpd_strokeColor">@color/colorAppAccent</item>
+    </style>
+
+    <style name="AppTheme.LinearProgress" parent="Material.Drawable.LinearProgress">
+        <item name="lpd_strokeColor">@color/colorAppAccent</item>
+    </style>
+
+    <style name="AppTheme.TabLayoutText">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Material.Drawable.Ripple.Wave.Light">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/gotha</item>
+    </style>
+
+    <style name="AppTheme.Button.Secondary" parent="AppTheme.Button">
+        <item name="android:textColor">@color/btn_text_secondary</item>
+        <item name="android:background">@color/btn_secondary</item>
+    </style>
+
+    <style name="AppTheme.Button.Dark" parent="AppTheme.Button">
+        <item name="android:textColor">@color/md_dark_primary_text</item>
+        <item name="android:background">@color/btn_dark</item>
+    </style>
+
+    <style name="AppTheme.Button.Default" parent="AppTheme.Button">
+        <item name="android:textColor">@color/md_dark_primary_text</item>
+        <item name="android:background">@drawable/btn_default</item>
+    </style>
+
+    <style name="AppTheme.Button.Dark.Accent" parent="AppTheme.Button.Dark">
+        <item name="android:textColor">@color/colorAppAccent</item>
+    </style>
+
+    <style name="AppTheme.Button.Accent" parent="AppTheme.Button">
+        <item name="android:background">@drawable/btn_accent</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.Button.Light" parent="AppTheme.Button">
+        <item name="android:textColor">@color/md_light_primary_text</item>
+    </style>
+
+    <style name="AppTheme.Button.Dark.Bold" parent="AppTheme.Button.Dark">
+        <item name="android:fontFamily">@font/gotha_bol</item>
+    </style>
+
+    <style name="AppTheme.Button.Light.Bold" parent="AppTheme.Button.Light">
+        <item name="android:fontFamily">@font/gotha_bol</item>
+    </style>
+
+    <style name="AppTheme.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/gotha</item>
+    </style>
+
+    <style name="AppTheme.TextView.Secondary" parent="AppTheme.TextView">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="AppTheme.TextView.Accent" parent="AppTheme.TextView">
+        <item name="android:textColor">@color/colorAppAccent</item>
+    </style>
+
+    <style name="AppTheme.TextView.Error" parent="AppTheme.TextView">
+        <item name="android:textColor">@color/md_red_500</item>
+    </style>
+
+    <style name="AppTheme.TextView.Dark" parent="AppTheme.TextView">
+        <item name="android:textColor">@color/md_dark_primary_text</item>
+    </style>
+
+    <style name="AppTheme.TextView.Dark.Bold" parent="AppTheme.TextView.Dark">
+        <item name="android:textColor">@color/md_dark_primary_text</item>
+        <item name="android:fontFamily">@font/gotha_bol</item>
+    </style>
+
+    <style name="AppTheme.TextView.Light" parent="AppTheme.TextView">
+        <item name="android:textColor">@color/md_light_primary_text</item>
+    </style>
+
+    <style name="AppTheme.TextView.Light.Bold" parent="AppTheme.TextView.Light">
+        <item name="android:textColor">@color/md_light_primary_text</item>
+        <item name="android:fontFamily">@font/gotha_bol</item>
+    </style>
+</resources>

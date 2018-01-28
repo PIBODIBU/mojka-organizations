@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "189020536618",
+    "firebase_url": "https://mojka-organizations.firebaseio.com",
+    "project_id": "mojka-organizations",
+    "storage_bucket": "mojka-organizations.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189020536618:android:02eff568d1f8ab81",
+        "android_client_info": {
+          "package_name": "com.mojka.organizations"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189020536618-8bp1a6bamqr59jbutvq961svpv8njcms.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mojka.organizations",
+            "certificate_hash": "9d0fd96052497f09648c7e772b4ea5fda89a83f0"
+          }
+        },
+        {
+          "client_id": "189020536618-09eal5uh36vubtvuu0e9immh82o9ae2l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTDOj2fjO_kFZpcMua2UxHIs7snO8xsHU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189020536618-09eal5uh36vubtvuu0e9immh82o9ae2l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

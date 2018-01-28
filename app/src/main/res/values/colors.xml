@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAppPrimary">#27304f</color>
+    <color name="colorAppPrimaryDark">#27304f</color>
+    <color name="colorPrimaryDarkFull">#1a2138</color>
+    <color name="colorAppAccent">#009cca</color>
+
+    <color name="colorPrimary_150">#7227304f</color>
+    <color name="colorAccent_150">#96009cca</color>
+
+    <color name="toolbar_secondary">#fbf9f8</color>
+    <color name="text_secondary">#656565</color>
+
+    <color name="bottom_nav_item_default">#fbf9f8</color>
+    <color name="bottom_nav_item_checked">@color/colorAppAccent</color>
+
+    <color name="drawer_header">#2b3548</color>
+    <color name="drawer_background">#242e41</color>
+    <color name="drawer_divider">#fbf9f8</color>
+
+    <color name="btn_dark">#1c2337</color>
+    <color name="btn_secondary">#dfe4e6</color>
+
+    <color name="btn_text_secondary">#656565</color>
+
+    <color name="edit_text_bg">#dee3e5</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="tab_selected">#dfe4e6</color>
+    <color name="tab_text">#6e6e6e</color>
+</resources>

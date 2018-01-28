@@ -1,0 +1,109 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.2'
+    dataBinding {
+        enabled = true
+    }
+
+    defaultConfig {
+        applicationId "com.mojka.organizations"
+        minSdkVersion 19
+        targetSdkVersion 27
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            postprocessing {
+                removeUnusedCode false
+                removeUnusedResources false
+                obfuscate false
+                optimizeCode false
+                proguardFile 'proguard-rules.pro'
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+repositories {
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots"
+    }
+
+    maven {
+        url "https://jitpack.io"
+    }
+
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+ext {
+    supportVersion = "27.0.2"
+    serviceVersion = "11.8.0"
+}
+
+dependencies {
+    // Multidex
+    implementation 'com.android.support:multidex:1.0.2'
+
+    // Support
+    implementation "com.android.support:appcompat-v7:${supportVersion}"
+    implementation "com.android.support:design:${supportVersion}"
+    implementation "com.android.support:cardview-v7:${supportVersion}"
+    implementation "com.android.support:recyclerview-v7:${supportVersion}"
+
+    // Firebase
+    implementation "com.google.firebase:firebase-auth:${serviceVersion}"
+    implementation "com.google.firebase:firebase-messaging:${serviceVersion}"
+
+    // Google services
+    implementation "com.google.android.gms:play-services-maps:${serviceVersion}"
+    implementation "com.google.android.gms:play-services-location:${serviceVersion}"
+
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+    // Butterknife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    // Custom views
+    implementation 'org.florescu.android.rangeseekbar:rangeseekbar-library:0.4.0'
+    implementation 'com.github.rey5137:material:1.2.4'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+    implementation 'com.takisoft.fix:datetimepicker:1.0.5'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+    implementation('com.mikepenz:materialdrawer:5.9.5@aar') {
+        transitive = true
+    }
+
+    // Images
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    // Support logic libraries
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.akexorcist:googledirectionlibrary:1.1.0'
+    implementation 'org.apache.commons:commons-io:1.3.2'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.7.1@aar') {
+        transitive = true
+    }
+}
+
+apply plugin: 'com.google.gms.google-services'
