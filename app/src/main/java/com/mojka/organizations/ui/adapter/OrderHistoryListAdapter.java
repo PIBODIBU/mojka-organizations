@@ -49,6 +49,16 @@ public class OrderHistoryListAdapter extends RecyclerView.Adapter<OrderHistoryVi
 //        holder.tvNumber.setText(order.getClient().getCar());
     }
 
+    public void setOrders(List<Order> orders) {
+        this.orders = orders;
+
+        notifyDataSetChanged();
+    }
+
+    public List<Order> getOrders() {
+        return orders;
+    }
+
     @Override
     public int getItemCount() {
         return orders.size();

@@ -5,6 +5,15 @@ public class Order {
     private Long date;
     private Client client;
 
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id=" + id +
+                ", date=" + date +
+                ", client=" + client +
+                '}';
+    }
+
     public Order(Integer id, Long date, Client client) {
         this.id = id;
         this.date = date;

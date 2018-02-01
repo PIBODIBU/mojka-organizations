@@ -4,6 +4,14 @@ public class Client {
     private String name;
     private String car;
 
+    @Override
+    public String toString() {
+        return "Client{" +
+                "name='" + name + '\'' +
+                ", car='" + car + '\'' +
+                '}';
+    }
+
     public Client(String name, String car) {
         this.name = name;
         this.car = car;
